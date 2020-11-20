@@ -68,9 +68,13 @@ def Resta_Tiempo(HP,HA):
     hours=0,
     weeks=0
 )
+    print(HP)
+    print("holiiiiii") 
+    print(HA)
+    print(type(HP))
     suma=0
     tiempo=HA-HP
-    suma=int(tiempo.seconds/60)
+    suma=int(tiempo.total_seconds()/60)
     return suma
 
 
